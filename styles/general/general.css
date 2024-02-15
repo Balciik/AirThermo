@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+body {
+    background-color: #FFF5EA;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.j-c {
+    justify-content: center;
+}
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+.s-around {
+    justify-content: space-around;
+}
+
+p,
+a,
+.h {
+    font-family: "Poppins", sans-serif;
+}
+.h {
+    font-size: 54px;
+}
