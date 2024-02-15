@@ -5,6 +5,7 @@ header {
     right: 0;
     height: 100px;
     background-color: #235789;
+    z-index: 10000;
 }
 
 .h-head {
