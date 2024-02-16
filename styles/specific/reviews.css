@@ -1,5 +1,7 @@
 .reviews {
     background-color: #235789;
+    position: relative;
+    padding-bottom: 80px;
 }
 
 h4 {
@@ -9,6 +11,7 @@ h4 {
 .review-item {
     width: 30vw;
     margin: 80Px;
+    margin-top: 30px;
 }
 
 .review-para {
@@ -17,6 +20,11 @@ h4 {
     text-align: center;
 }
 
+
+.review-pfp {
+    width: 25%;
+ 
+}
 .review-name {
     color: #FFF5EA;
     font-style: italic;
