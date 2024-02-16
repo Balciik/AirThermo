@@ -1,0 +1,43 @@
+.time {
+    background-color: #235789;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+h2 {
+    color: #FFF5EA;
+}
+
+.time-line {
+    height: 800px;
+    width: 8px;
+    border: none;
+    background-color: #FFF5EA;
+    border-radius: 4px;
+}
+
+.time-item {
+    margin: 80px;
+  
+}
+
+.one {
+    margin-top: -100px;
+}
+
+.two {
+    margin-top: 190px;
+}
+.time-h {
+    color: #FFF5EA;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.time-para {
+    max-width: 300px;
+    color: #FFF5EA;
+    opacity: 0.8;
+    font-size: 20px;
+    margin-top: -10px;
+}
