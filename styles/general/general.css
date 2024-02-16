@@ -25,7 +25,8 @@ body {
 
 p,
 a,
-.h {
+.h,
+button{
     font-family: "Poppins", sans-serif;
 }
 .h {

@@ -1,0 +1,24 @@
+.reviews {
+    background-color: #235789;
+}
+
+h4 {
+    color: #FFF5EA;
+}
+
+.review-item {
+    width: 30vw;
+    margin: 80Px;
+}
+
+.review-para {
+    color: #FFF5EA;
+    font-size: 18px;
+    text-align: center;
+}
+
+.review-name {
+    color: #FFF5EA;
+    font-style: italic;
+    opacity: 0.7;
+}

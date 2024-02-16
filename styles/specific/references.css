@@ -1,0 +1,40 @@
+.references {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+h3 {
+    color: #235789;
+}
+
+.ref-item {
+    width: 20vw;
+    background-color: #235789;
+    height: 20vw;
+    margin: 2vw;
+    border-radius: 20Px;
+}
+
+@media (max-width: 950px) {
+    .ref-items {
+        flex-direction: column;
+    }
+
+    .ref-item {
+        width: 60vw;
+        height: 40vw;
+    }
+}
+
+.more-ref {
+    width: 320Px;
+    height: 80Px;
+    border: none;
+    border-radius: 20px;
+    background-color: #235789;
+    color: #FFF5EA;
+    font-weight: 700;
+    font-size: 34px;
+    cursor: pointer;
+    margin-top: 20px;
+}
