@@ -5,7 +5,7 @@ header {
     right: 0;
     height: 100px;
     background-color: #235789;
-    z-index: 10000;
+    z-index: 1000000;
 }
 
 .h-head {
@@ -19,6 +19,13 @@ header {
     color: #FFF5EA;
     font-size: 28px;
     margin: 8px;
+    cursor: pointer;
     font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.h-link:hover {
+    color: #ffffff;
 }
 

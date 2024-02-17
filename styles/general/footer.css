@@ -7,9 +7,14 @@ footer {
     padding-bottom: -80px;
 }
 
+.blue {
+    background-color: #235789;
+}
 .footer-links {
     margin-right: 10vw;
 }
+
+
 
 .footer-link-h {
     font-size: 24px;
@@ -25,4 +30,9 @@ footer {
     font-weight: 500;
     opacity: 0.6;
     max-width: 340px;
+}
+
+.blue .footer-link-h,
+.blue .f-link {
+    color: #FFF5EA;
 }
