@@ -1,0 +1,24 @@
+
+h1 {
+    display: none;
+}
+h2 {
+    color: #FFF5EA;
+    margin-top: 100px;
+}
+
+h3 {
+    color: #235789;
+}
+.ref-item {
+    position: relative;
+}
+
+.ref-pic {
+    width: 30vw;
+    margin-top: -6vw;
+}
+
+.m-top {
+    margin-top: 0px;
+}
