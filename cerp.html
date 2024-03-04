@@ -16,11 +16,17 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/specific/ser-main.css">
 
+    <link rel="stylesheet" href="styles/general/static-but.css">
+    <link rel="stylesheet" href="styles/general/burger.css">
+    <link rel="stylesheet" href="styles/specific/ser-main.css">
 </head>
 
 <body>
+    <a href="https://airthermo.cz/objednat/">
+        <button class="sta-but b-blue white">Objednat ></button>
+    </a>
+
     <header class="flex a-c s-around">
         <div class="l-head">
             <p class="h-head">
@@ -28,27 +34,50 @@
             </p>
         </div>
         <div class="r-header">
-            <a class="h-link" href="https://about-us.dls8xlu6q7aze.amplifyapp.com/">
+            <a class="h-link" href="https://airthermo.cz/onás/">
                 O nás
             </a>
-            <a class="h-link">
-                Služby
+            <a class="h-link" href="https://airthermo.cz/služby/">
+                služby
             </a>
-            <a class="h-link">
+            <a class="h-link" href="https://airthermo.cz/reference/">
                 Reference
             </a>
-            <a class="h-link">
-                Recenze
+            <a class="h-link" href="https://airthermo.cz/kontakty/">
+                Kontakty
             </a>
+
         </div>
+        <button class="burger" id="burger-menu" onclick="toggleMenu()"></button>
+        <div class="background"></div>
+        <div class="menu">
+            <nav>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/onás/">Služby</a>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/služby/">Služby</a>
+
+                <a style="animation-delay: 0.4s" href="https://airthermo.cz/reference/">Reference</a>
+
+                <a style="animation-delay: 0.5s" href="https://airthermo.cz/kontakty/">Kontakty</a>
+                <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
+                    <button class="burger-button b-blue white no-dec">
+                        Objednat >
+                    </button>
+                </a>
+
+            </nav>
+        </div>
+        <script type="text/javascript">
+            const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
     </header>
 
-    <div class="ser-main m-top-ser f-col a-c">
-        <div class="services-item f-col a-c ">
+    <div class="ser-main m-top-ser whi f-col a-c">
+
+        <div class="services-item f-col a-c j-c">
             <img class="ser-pic" src="pics/ser-two-blue.svg">
-            <h2 class="h">Montáž tepelných čerpadel</h2>
+            <h1 class="t-cen blue">Montáž tepelých čerpadel</h1>
             <div class="how-does f-col">
-                <div class="flex wrap">
+                <div class="flex wrap service-col">
                     <div class="how-does-item">
                         <p class="how-does-h">
                             1. návrh
@@ -68,7 +97,7 @@
                             velit turpis volutpat ante, in pharetra metus</p>
                     </div>
                 </div>
-                <div class="flex wrap">
+                <div class="flex wrap service-col">
                     <div class="how-does-item">
                         <p class="how-does-h">
                             1. návrh
@@ -91,28 +120,38 @@
 
 
             </div>
-            <button class="order">
-                Objednat
-            </button>
+            <form class="form f-col a-c">
 
-        </div>
-        <svg class=" nectar-shape-divider
+
+                <div class="flex wrap j-c">
+                    <input name="Jméno" class="inputs name-input" type="text" placeholder="Jméno">
+                    <input name="Příjmení" class="inputs surname-input" type="text" placeholder="Příjmení">
+                </div>
+                <div class="flex wrap j-c">
+                    <input name="Email" class="inputs name-input" type="text" placeholder="Email">
+                    <input name="Telefon" class="inputs tel-input" type="text" placeholder="Tel. číslo">
+                </div>
+                <button type="submit" class="order m-top">Objednat</button>
+            </form>
+
+            <svg class=" nectar-shape-divider
             bl" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
-            <path
-                d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
-            </path>
-            <path
-                d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
-            </path>
-            <path
-                d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
-            </path>
-        </svg>
+                <path
+                    d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
+                </path>
+                <path
+                    d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
+                </path>
+                <path
+                    d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
+                </path>
+            </svg>
+        </div>
     </div>
-    <footer class="flex s-around blue">
+    <footer class="flex b-blue s-around">
         <img class="footer-logo" src="pics/logo-footer.svg">
 
-        <div class="flex">
+        <div class="flex wrap j-c">
             <div class="footer-links f-col">
                 <p class="footer-link-h">
                     Odkazy
@@ -127,7 +166,7 @@
                     Reference
                 </a>
                 <a class="f-link">
-                    Recenze
+                    Kontakty
                 </a>
 
 

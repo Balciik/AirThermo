@@ -22,3 +22,15 @@
 .bl {
     fill: #235789;
 }
+
+@media (max-width: 1500px) {
+  .nectar-shape-divider {
+    height: 9%;
+  }
+}
+
+@media (max-width: 1000Px) {
+  .nectar-shape-divider {
+    height: 3%;
+  }
+}

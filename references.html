@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link
@@ -12,18 +13,23 @@
     <link rel="stylesheet" href="styles/general/header.css">
     <link rel="stylesheet" href="styles/general/path-elem.css">
     <link rel="stylesheet" href="styles/general/footer.css">
-
+    <link rel="stylesheet" href="styles/general/burger.css">
+    <link rel="stylesheet" href="styles/general/static-but.css">
     <link rel="stylesheet" href="styles/specific/ref-main.css">
+
     <link rel="stylesheet" href="styles/specific/carousel.css">
 
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+
 
 
 </head>
 
 <body>
+    <a href="https://airthermo.cz/objednat/">
+        <button class="sta-but b-blue white">Objednat ></button>
+    </a>
+
     <header class="flex a-c s-around">
         <div class="l-head">
             <p class="h-head">
@@ -31,22 +37,48 @@
             </p>
         </div>
         <div class="r-header">
-            <a class="h-link">
+            <a class="h-link" href="https://airthermo.cz/onás/">
                 O nás
             </a>
-            <a class="h-link">
-                Služby
+            <a class="h-link" href="https://airthermo.cz/služby/">
+                služby
             </a>
-            <a class="h-link">
+            <a class="h-link" href="https://airthermo.cz/reference/">
                 Reference
             </a>
-            <a class="h-link">
-                Recenze
+            <a class="h-link" href="https://airthermo.cz/kontakty/">
+                Kontakty
             </a>
+
         </div>
+        <button class="burger" id="burger-menu" onclick="toggleMenu()"></button>
+        <div class="background"></div>
+        <div class="menu">
+            <nav>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/onás/">Služby</a>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/služby/">Služby</a>
+
+                <a style="animation-delay: 0.4s" href="https://airthermo.cz/reference/">Reference</a>
+
+                <a style="animation-delay: 0.5s" href="https://airthermo.cz/kontakty/">Kontakty</a>
+                <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
+                    <button class="burger-button b-blue white no-dec">
+                        Objednat >
+                    </button>
+                </a>
+
+            </nav>
+        </div>
+        <script type="text/javascript">
+            const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
     </header>
-    <div class="ref-header f-col a-c">
-        <h1 class="h">Reference</h1>
+    <div class="ref-header b-white f-col a-c">
+        <h1 class="blue">Reference</h1>
+        <p class="ref-header-text t-cen black">Naší práci odvádíme pořádně, proto si věříme, že s námy budete spokojení.
+            Ani
+            jeden projekt nebereme na lehkou váhu, protože spokojenost našich zákazníků je pro nás vším. Podle našich
+            referencí můžete poznat, že do naší práce vkládáme lásku k tomutu řemeslu!</p>
         <svg class=" nectar-shape-divider
             bl" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
             <path
@@ -60,96 +92,167 @@
             </path>
         </svg>
     </div>
-    <div class="ref-item blue f-col a-c">
-        <h2 class="h">
+    <div class="ref-item b-blue f-col a-c">
+        <h2 class="white t-cen">
             Klimatizace
         </h2>
         <img class="ref-pic" src="pics/services-one.svg">
-        <div class="p-gallery">
-
-            <div class="demo-container">
-                <div class="carousel">
-                    <input checked="checked" class="carousel__activator" id="carousel-slide-activator-1" name="carousel"
-                        type="radio">
-                    <input class="carousel__activator" id="carousel-slide-activator-2" name="carousel" type="radio">
-                    <input class="carousel__activator" id="carousel-slide-activator-3" name="carousel" type="radio">
-                    <div class="carousel__controls">
-                        <label class="carousel__control carousel__control--forward" for="carousel-slide-activator-2">
-                            &gt;
-                        </label>
+        <div class="center">
+            <div class="wrapper">
+                <div class="inner-2">
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Product Design</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
                     </div>
-                    <div class="carousel__controls">
-                        <label class="carousel__control carousel__control--backward" for="carousel-slide-activator-1">
-                            &lt; </label>
-                        <label class="carousel__control carousel__control--forward" for="carousel-slide-activator-3">
-                            &gt;
-                        </label>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Custom Website</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
                     </div>
-                    <div class="carousel__controls">
-                        <label class="carousel__control carousel__control--backward" for="carousel-slide-activator-2">
-                            &lt; </label>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
                     </div>
-                    <div class="carousel__screen">
-                        <div class="carousel__track">
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    a
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    b
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    C
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    d
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    e
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    f
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    g
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    g
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    g
-                                </div>
-                            </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="map-2">
+                <button class="active first"></button>
+                <button class="second"></button>
+                <button class="third"></button>
+
+            </div>
+        </div>
+        <div class="center hidden">
+            <div class="wrapper hidden">
+                <div class="inner-hidden">
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Product Design</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Custom Website</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-hidden">
+                <button class="active first-2"></button>
+                <button class="second-2"></button>
+                <button class="third-2"></button>
+                <button class="fourth-2"></button>
+                <button class="fifth-2"></button>
+                <button class="sixth-2"></button>
+                <button class="seventh-2"></button>
+                <button class="eigth-2"></button>
+                <button class="nineth-2"></button>
+            </div>
         </div>
         <svg class=" nectar-shape-divider
         whi" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
@@ -165,104 +268,347 @@
         </svg>
 
     </div>
-    <div class="ref-item whi f-col a-c">
-        <h3 class="h">
+    <div class="ref-item b-white f-col a-c">
+        <h3 class="blue t-cen">
             Tepelná čerpadla
-            </h2>
-            <img class="ref-pic" src="pics/ser-two-blue.svg">
-            <div class="p-gallery">
+        </h3>
+        <img class="ref-pic" src="pics/ser-two-blue.svg">
+        <div class="center">
+            <div class="wrapper">
+                <div class="inner-3">
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Product Design</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Custom Website</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div class="demo-container">
-                    <div class="carousel">
-                        <input checked="checked" class="carousel__activator" id="carousel-slide-activator-1"
-                            name="carousel" type="radio">
-                        <input class="carousel__activator" id="carousel-slide-activator-2" name="carousel" type="radio">
-                        <input class="carousel__activator" id="carousel-slide-activator-3" name="carousel" type="radio">
-                        <div class="carousel__controls">
-                            <label class="carousel__control carousel__control--forward"
-                                for="carousel-slide-activator-2">
-                                &gt;
-                            </label>
+            <div class="map-3">
+                <button class="active first"></button>
+                <button class="second"></button>
+                <button class="third"></button>
+
+            </div>
+        </div>
+        <div class="center hidden">
+            <div class="wrapper hidden">
+                <div class="inner-hidden-3">
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Product Design</h1>
+                            <h3>UI/UX, Design</h3>
                         </div>
-                        <div class="carousel__controls">
-                            <label class="carousel__control carousel__control--backward"
-                                for="carousel-slide-activator-1">
-                                &lt; </label>
-                            <label class="carousel__control carousel__control--forward"
-                                for="carousel-slide-activator-3">
-                                &gt;
-                            </label>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Custom Website</h1>
+                            <h3>UI/UX, Design</h3>
                         </div>
-                        <div class="carousel__controls">
-                            <label class="carousel__control carousel__control--backward"
-                                for="carousel-slide-activator-2">
-                                &lt; </label>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
                         </div>
-                        <div class="carousel__screen">
-                            <div class="carousel__track">
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        a
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        b
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        C
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        d
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        e
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        f
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        g
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        g
-                                    </div>
-                                </div>
-                                <div
-                                    class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                    <div class="demo-content">
-                                        g
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-hidden-3">
+                <button class="active first-2"></button>
+                <button class="second-2"></button>
+                <button class="third-2"></button>
+                <button class="fourth-2"></button>
+                <button class="fifth-2"></button>
+                <button class="sixth-2"></button>
+                <button class="seventh-2"></button>
+                <button class="eigth-2"></button>
+                <button class="nineth-2"></button>
+            </div>
+        </div>
+        <svg class=" nectar-shape-divider
+            bl" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
+            <path
+                d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
+            </path>
+            <path
+                d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
+            </path>
+            <path
+                d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
+            </path>
+        </svg>
+
+    </div>
+    <div class="ref-item b-blue f-col a-c">
+        <h4 class="white t-cen">
+            Chladící boxy
+            </h2>
+            <img class="ref-pic m-top" src="pics/services-three.svg">
+
+            <div class="center">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                            <div class="content">
+                                <h1>Product Design</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                            <div class="content">
+                                <h1>Custom Website</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
+                <div class="map">
+                    <button class="active first"></button>
+                    <button class="second"></button>
+                    <button class="third"></button>
 
+                </div>
+            </div>
+            <div class="center hidden">
+                <div class="wrapper hidden">
+                    <div class="inner-hidden-3">
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                            <div class="content">
+                                <h1>Product Design</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                            <div class="content">
+                                <h1>Custom Website</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                            <div class="content">
+                                <h1>Digital Marketing</h1>
+                                <h3>UI/UX, Design</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-hidden-3">
+                    <button class="active first-2"></button>
+                    <button class="second-2"></button>
+                    <button class="third-2"></button>
+                    <button class="fourth-2"></button>
+                    <button class="fifth-2"></button>
+                    <button class="sixth-2"></button>
+                    <button class="seventh-2"></button>
+                    <button class="eigth-2"></button>
+                    <button class="nineth-2"></button>
+                </div>
+            </div>
             <svg class=" nectar-shape-divider
-            bl" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
+        whi" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
                 <path
                     d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
                 </path>
@@ -273,115 +619,6 @@
                     d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
                 </path>
             </svg>
-    </div>
-    <div class="ref-item blue f-col a-c">
-        <h2 class="h">
-            Chladící boxy
-        </h2>
-        <img class="ref-pic m-top" src="pics/services-three.svg">
-        <div class="p-gallery">
-
-            <div class="demo-container hidden-element visible">
-                <div class="carousel">
-                    <input checked="checked" class="carousel__activator" id="carousel-slide-activator-1" name="carousel"
-                        type="radio">
-                    <input class="carousel__activator" id="carousel-slide-activator-2" name="carousel" type="radio">
-                    <input class="carousel__activator" id="carousel-slide-activator-3" name="carousel" type="radio">
-                    <div class="carousel__controls">
-                        <label class="carousel__control carousel__control--forward" for="carousel-slide-activator-2">
-                            &gt;
-                        </label>
-                    </div>
-                    <div class="carousel__controls">
-                        <label class="carousel__control carousel__control--backward" for="carousel-slide-activator-1">
-                            &lt; </label>
-                        <label class="carousel__control carousel__control--forward" for="carousel-slide-activator-3">
-                            &gt;
-                        </label>
-                    </div>
-                    <div class="carousel__controls">
-                        <label class="carousel__control carousel__control--backward" for="carousel-slide-activator-2">
-                            &lt; </label>
-                    </div>
-                    <div class="carousel__screen">
-                        <div class="carousel__track">
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    a
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    b
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    C
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    d
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    e
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    f
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    g
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    g
-                                </div>
-                            </div>
-                            <div
-                                class="carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3">
-                                <div class="demo-content">
-                                    g
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <svg class="nectar-shape-divider gr " aria-hidden="true" fill="" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1000 300" preserveAspectRatio="none">
-                <path
-                    d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
-                </path>
-            </svg>
-        </div>
-        <svg class=" nectar-shape-divider
-        whi" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
-            <path
-                d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
-            </path>
-            <path
-                d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
-            </path>
-            <path
-                d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
-            </path>
-        </svg>
 
     </div>
 
@@ -389,10 +626,10 @@
 
 
 
-    <footer class="flex s-around">
+    <footer class="flex  s-around">
         <img class="footer-logo" src="pics/logo-footer.svg">
 
-        <div class="flex">
+        <div class="flex wrap j-c">
             <div class="footer-links f-col">
                 <p class="footer-link-h">
                     Odkazy
@@ -407,7 +644,7 @@
                     Reference
                 </a>
                 <a class="f-link">
-                    Recenze
+                    Kontakty
                 </a>
 
 
@@ -424,6 +661,9 @@
         </div>
 
     </footer>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/carousel-hidden.js"></script>
+
 </body>
 
 </html>

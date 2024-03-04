@@ -8,9 +8,10 @@
     width: 60vw;
 }
 
-h1 {
-    color: #235789;
 
+h2 {
+   
+    font-size: 80px;
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -28,6 +29,11 @@ h1 {
 }
 
 @media (max-width: 1300px) {
+    .a-us {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     .r-a-us {
         width: 40vw;
     }

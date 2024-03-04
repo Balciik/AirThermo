@@ -1,0 +1,33 @@
+.sta-but {
+   
+    
+    top: 88%;
+    left: 90vw;
+   
+    
+  
+    z-index: 100000;
+    position: sticky;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 40px;
+
+    transition: 0.3s ease;
+    transform: translateX(-40px);
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.sta-but:hover {
+    background-color: #1f4d77;
+}
+
+
+
+@media (max-width: 1000px) {
+    .sta-but {
+        display: none;
+    }
+}

@@ -12,28 +12,43 @@
 }
 
 .m-top-ser {
-    margin-top: 110px;
+    margin-top: 120px;
 }
 
-.blue {
-    background-color: #235789;
-    width: 100vw;
+.h1-su {
+    font-size: 18px;
+    opacity: 0.7;
+    font-weight: 600;
+    margin-top: -38px;
 }
 h1 {
-    margin-top: 140px;
-    color: #FFF5EA;
-    
+    font-size: 80px
 }
-h2 {
-    font-size: 30px;
+h2,
+h3,
+h4 {
+    font-size: 60px;
+}
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 80px;
+    color: #FFF5EA;
+}
+
+h3{
     color: #235789;
-}
-h3 {
-    color: #FFF5EA;
 }
 .ser-pic {
     width: 25vw;
     margin-bottom: -5vw;
+}
+
+@media (max-width: 800px) {
+    .ser-pic {
+        width: 50vw;
+    }
 }
 .how-does-item {
     margin: 40px;
@@ -44,7 +59,7 @@ h3 {
     
 }
 
-.blue .how-does-h {
+.b-blue .how-does-h {
     color: #FFF5EA;
 }
 
@@ -54,28 +69,29 @@ h3 {
     opacity: 0.7;
 }
 
-.blue .how-does-text {
+.b-blue .how-does-text {
     color: #FFF5EA;
 }
 .m-top {
     margin-top: 50px;
 }
 .order {
-    width: 280px;
-    height: 70px;
+    width: 320px;
+    height: 90px;
     background-color: #235789;
     border: none;
-    font-size: 28px;
+    font-size: 38px;
     z-index: 10000;
     font-weight: 700;
     color: #FFF5EA;
     border-radius: 8px;
     transition: 0.3s;
     cursor: pointer;
-    
+    margin-bottom: 80px;
+    margin-top: 60px;
 }
 
-.blue .order {
+.b-blue .order {
     background-color: #FFF5EA;
     color: #235789;
 }
@@ -84,7 +100,7 @@ h3 {
     background-color: #1c4b78;
 }
 
-.blue .order:hover {
+.b-blue .order:hover {
     background-color: #ffffff;
 }
 
@@ -92,13 +108,50 @@ h3 {
     width: 380px;
     height: 60px;
     border: 4px solid #235789;
-    border-radius: 12px;
+    border-radius: 8px;
     z-index: 10000;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     color: #1c4b78;
     padding-left: 20Px;
     margin: 30px;
     margin-bottom: 0px;
 }
 
+@media (max-width: 800px) {
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:1000px) {
+    .service-col {
+        flex-direction: column;
+        
+    }
+
+    .how-does-text {
+        max-width: 60vw;
+    }
+
+    .how-does-item {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .how-does-text {
+        max-width: 80vw;
+    }
+}
+
+@media(max-width: 550px) {
+    .inputs {
+        width: 80vw;
+    }
+
+    
+}

@@ -4,12 +4,9 @@
 }
 
 footer {
-    padding-bottom: -80px;
+    padding-bottom: 30px;
 }
 
-.blue {
-    background-color: #235789;
-}
 .footer-links {
     margin-right: 10vw;
 }
@@ -29,10 +26,29 @@ footer {
     color: #235789;
     font-weight: 500;
     opacity: 0.6;
+    margin-top: 8px;
     max-width: 340px;
 }
 
-.blue .footer-link-h,
-.blue .f-link {
+.b-blue .footer-link-h,
+.b-blue .f-link {
     color: #FFF5EA;
+}
+
+@media (max-width: 1000px) {
+    .footer-logo {
+        display: none;
+    }
+    .footer-links {
+        margin-left: 10vw;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .footer-link-h {
+        margin-bottom: 0px;
+    }
+    .f-link {
+        text-align: center;
+    }
+    
 }

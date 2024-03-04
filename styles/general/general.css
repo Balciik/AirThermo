@@ -6,6 +6,9 @@
 }
 body {
     background-color: #FFF5EA;
+    margin-top: -24px;
+    width: 101%;
+    margin-left: -0.5%;
 }
 
 .a-c {
@@ -23,13 +26,36 @@ body {
     justify-content: space-around;
 }
 
-p,
-a,
-.h,
-button,
-input{
+.no-dec {
+    text-decoration: none;
+}
+* {
     font-family: "Poppins", sans-serif;
 }
 .h {
     font-size: 54px;
+}
+
+.t-cen {
+    text-align: center;
+}
+
+.blue {
+   color: #235789
+}
+
+.b-blue {
+    background-color: #235789;
+}
+
+.white {
+    color: #FFF5EA;
+}
+
+.b-white {
+    background-color: #FFF5EA;
+}
+
+.black {
+    color: #313638;
 }

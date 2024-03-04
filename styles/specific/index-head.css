@@ -1,0 +1,58 @@
+.index-header {
+    margin-top: 80px;
+    position: relative;
+}
+
+h1 {
+    width: 750px;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+.index-header-subhead {
+    opacity: 0.8;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: -50px;
+    margin-bottom: 80px;
+
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 60px;
+        width: 500px;
+        line-height: 70px;
+    }
+
+    .index-header-subhead{
+        margin-top: -30px
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size:42px;
+        width: 350px;
+        line-height: 48px;
+    }
+    .index-header-subhead {
+        font-size: 18px;
+        margin-top: -20px;
+        margin-bottom: 40px;
+    }
+}
+
+.index-but {
+    width: 300px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 90px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.index-but:hover {
+    background-color: white;
+}

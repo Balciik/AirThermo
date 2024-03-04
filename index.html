@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="styles/general/header.css">
     <link rel="stylesheet" href="styles/general/path-elem.css">
     <link rel="stylesheet" href="styles/general/footer.css">
+    <link rel="stylesheet" href="styles/general/burger.css">
+
+    <link rel="stylesheet" href="styles/specific/index-head.css">
 
     <link rel="stylesheet" href="styles/specific/a-us.css">
     <link rel="stylesheet" href="styles/specific/services.css">
     <link rel="stylesheet" href="styles/specific/references.css">
     <link rel="stylesheet" href="styles/specific/reviews.css">
+    <link rel="stylesheet" href="styles/specific/carousel.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -25,6 +29,10 @@
 </head>
 
 <body>
+    <a href="https://airthermo.cz/objednat/">
+        <button class="sta-but b-blue white">Objednat ></button>
+    </a>
+
     <header class="flex a-c s-around">
         <div class="l-head">
             <p class="h-head">
@@ -32,24 +40,63 @@
             </p>
         </div>
         <div class="r-header">
-            <a class="h-link">
+            <a class="h-link" href="https://airthermo.cz/onás/">
                 O nás
             </a>
-            <a class="h-link">
-                Služby
+            <a class="h-link" href="https://airthermo.cz/služby/">
+                služby
             </a>
-            <a class="h-link">
+            <a class="h-link" href="https://airthermo.cz/reference/">
                 Reference
             </a>
-            <a class="h-link">
-                Recenze
+            <a class="h-link" href="https://airthermo.cz/kontakty/">
+                Kontakty
             </a>
+
         </div>
+        <button class="burger" id="burger-menu" onclick="toggleMenu()"></button>
+        <div class="background"></div>
+        <div class="menu">
+            <nav>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/onás/">Služby</a>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/služby/">Služby</a>
+
+                <a style="animation-delay: 0.4s" href="https://airthermo.cz/reference/">Reference</a>
+
+                <a style="animation-delay: 0.5s" href="https://airthermo.cz/kontakty/">Kontakty</a>
+                <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
+                    <button class="burger-button b-blue white no-dec">
+                        Objednat >
+                    </button>
+                </a>
+
+            </nav>
+        </div>
+        <script type="text/javascript">
+            const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
     </header>
+    <div class="index-header b-blue f-col a-c j-c">
+        <h1 class="white t-cen">Klimatizacím zkrátka rozumíme</h1>
+        <p class="index-header-subhead t-cen white">Váš dodavatel vzduchotechniky</p>
+        <button class="index-but b-white blue">Objednat ></button>
+        <svg class=" nectar-shape-divider
+        whi" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
+            <path
+                d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
+            </path>
+            <path
+                d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
+            </path>
+            <path
+                d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
+            </path>
+        </svg>
+    </div>
     <div class="a-us flex">
         <div class="l-a-us f-col a-c">
-            <h1 class="h">O nás</h1>
-            <p class="a-us-text">
+            <h2 class="blue">O nás</h2>
+            <p class="a-us-text black">
                 Lorem ipsum dolor sit amet, consectetuer
                 adipiscing elit. Donec vitae arcu. Maecenas
                 fermentum, sem in pharetra pellentesque,
@@ -114,11 +161,163 @@
 
     </div>
     <div class="references f-col a-c">
-        <h3 class="h">Reference</h3>
-        <div class="flex ref-items j-c">
-            <div class="ref-item"></div>
-            <div class="ref-item"></div>
-            <div class="ref-item"></div>
+        <h3 class="blue">Reference</h3>
+        <div class="center">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <p class="h1">Digital Marketing</p>
+                            <p class="h3">UI/UX, Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map">
+                <button class="active first"></button>
+                <button class="second"></button>
+                <button class="third"></button>
+
+            </div>
+        </div>
+        <div class="center hidden">
+            <div class="wrapper hidden">
+                <div class="inner-hidden">
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Product Design</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Custom Website</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+                        <div class="content">
+                            <h1>Digital Marketing</h1>
+                            <h3>UI/UX, Design</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-hidden">
+                <button class="active first-2"></button>
+                <button class="second-2"></button>
+                <button class="third-2"></button>
+                <button class="fourth-2"></button>
+                <button class="fifth-2"></button>
+                <button class="sixth-2"></button>
+                <button class="seventh-2"></button>
+                <button class="eigth-2"></button>
+                <button class="nineth-2"></button>
+            </div>
         </div>
         <button class="more-ref">Více referencí</button>
         <svg class=" nectar-shape-divider
@@ -251,7 +450,10 @@
 
     </footer>
 
+    <script src="scripts/carousel-hidden.js">
 
+    </script>
+    <script src="scripts/carousel.js"></script>
 </body>
 
 </html>

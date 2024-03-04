@@ -1,15 +1,48 @@
+.ref-header {
+    margin-top: 140px;
+    position: relative;
+}
 
 h1 {
-    display: none;
-}
-h2 {
-    color: #FFF5EA;
-    margin-top: 100px;
+    font-size: 80px;
 }
 
-h3 {
-    color: #235789;
+
+.ref-header-text {
+    font-size: 20px;
+    max-width: 50vw;
+    font-weight: 500;
+    margin-top: 0px;
+    padding-bottom: 70px;
 }
+
+
+@media (max-width: 800px) {
+    .ref-header-text {
+        max-width: 90vw;
+    }
+}
+
+
+h2,
+h3,
+h4 {
+    font-size: 64px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 46px;
+    }
+}
+
+
 .ref-item {
     position: relative;
 }
@@ -19,6 +52,11 @@ h3 {
     margin-top: -6vw;
 }
 
+@media (max-width: 1000px) {
+    .ref-pic {
+        width: 50vw;
+    }
+}
 .m-top {
     margin-top: 0px;
 }
