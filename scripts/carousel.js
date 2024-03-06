@@ -44,8 +44,8 @@ buttonsWrapper2.addEventListener("click", (e) => {
   }
 });
 
-const buttonsWrapper3 = document.querySelector(".map-2");
-const slides3 = document.querySelector(".inner-2");
+const buttonsWrapper3 = document.querySelector(".map-3");
+const slides3 = document.querySelector(".inner-3");
 
 buttonsWrapper3.addEventListener("click", (e) => {
   if (e.target.nodeName === "BUTTON") {

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" type="text/css" />
+    </noscript>
 
-    <link rel="stylesheet" href="styles/general/general.css">
+
     <link rel="stylesheet" href="styles/general/header.css">
     <link rel="stylesheet" href="styles/general/path-elem.css">
     <link rel="stylesheet" href="styles/general/footer.css">
@@ -21,10 +27,16 @@
     <link rel="stylesheet" href="styles/specific/references.css">
     <link rel="stylesheet" href="styles/specific/reviews.css">
     <link rel="stylesheet" href="styles/specific/carousel.css">
+    <link rel="stylesheet" href="styles/general/general.css">
 
+
+    <title>Montáž vzduchotechniky - AirThermo-Technic</title>
+    <meta name="description"
+        content="AirThermo-Technic se zaměřuje na montáž klimatizací, tepelých čerpadel a výrobou chladících boxů. Všechnu práci odvádíme s láskou a na klíč, proto se můžete na hotový projekt už po příchodu domů!">
+    <meta name="keywords" content="Vzduchotechnika, klimatizace, tepelná čerpadla">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
 
+    <link rel="icon" type="image/x-icon" href="pics/airthermo-logo.svg">
 
 </head>
 
@@ -49,8 +61,10 @@
             <a class="h-link" href="https://airthermo.cz/reference/">
                 Reference
             </a>
-            <a class="h-link" href="https://airthermo.cz/kontakty/">
-                Kontakty
+            <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
+                <button class="header-button  b-white blue no-dec">
+                    Objednat >
+                </button>
             </a>
 
         </div>
@@ -63,7 +77,7 @@
 
                 <a style="animation-delay: 0.4s" href="https://airthermo.cz/reference/">Reference</a>
 
-                <a style="animation-delay: 0.5s" href="https://airthermo.cz/kontakty/">Kontakty</a>
+
                 <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
                     <button class="burger-button b-blue white no-dec">
                         Objednat >
@@ -77,9 +91,9 @@
         </script>
     </header>
     <div class="index-header b-blue f-col a-c j-c">
-        <h1 class="white t-cen">Klimatizacím zkrátka rozumíme</h1>
-        <p class="index-header-subhead t-cen white">Váš dodavatel vzduchotechniky</p>
-        <button class="index-but b-white blue">Objednat ></button>
+        <h1 class="white t-cen hidden-element">Klimatizacím zkrátka rozumíme</h1>
+        <p class="index-header-subhead t-cen white hidden-element">Váš dodavatel vzduchotechniky</p>
+        <button class="index-but b-white blue hidden-element">Objednat ></button>
         <svg class=" nectar-shape-divider
         whi" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
             <path
@@ -95,26 +109,22 @@
     </div>
     <div class="a-us flex">
         <div class="l-a-us f-col a-c">
-            <h2 class="blue">O nás</h2>
-            <p class="a-us-text black">
-                Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Donec vitae arcu. Maecenas
-                fermentum, sem in pharetra pellentesque,
-                velit turpis volutpat ante, in pharetra metus
-                odio a lectus. Mauris tincidunt sem sed arcu.
-                Praesent dapibus. Proin pede metus, vulputate nec,
-                fermentum fringilla, vehicula vitae, justo. Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Donec vitae arcu. Maecenas
-                fermentum, sem in pharetra pellentesque,
-                velit turpis volutpat ante, in pharetra metus
-                odio a lectus. Mauris tincidunt sem sed arcu.
-                Praesent dapibus. Proin pede metus, vulputate nec,
-                fermentum fringilla, vehicula vitae, justo.
-
+            <h2 class="blue hidden-element">O nás</h2>
+            <p class="a-us-text black hidden-element">
+                Jsme firma, která svojí práci vykonává s láskou. Montujeme klimatizaca, tepelná čerpadla a vyrábíme
+                chladící boxy. U každé naší služby se můžete spolehnout, že bude provedená pořádně. Montáž klimatizací i
+                tepelných čerpadel děláme na klíč, proto se můžete pouze těšit na nový a svěží
+                pocit z domova.
+            </p>
+            <p class="a-us-text black hidden-element">
+                Náš příběh začíná teprvě nedávno, avšak za tuto dobu jsme nasbírali nespočetně zkušeností v oblastni
+                montáže i výroby. Máme za sebou spoustu spokojených zákazníků, kterým naše služby vyhovují. Nechte si
+                namontovat klimatizaci, tepelné čerpadlo nebo vyrobit chladící box od nás a připojte se k našim
+                spokojeným zákazníkům.
             </p>
         </div>
-        <div class="r-a-us">
-            <img class="a-us-pic" src="pics/airthermo-logo.svg">
+        <div class="r-a-us hidden-element">
+            <img class="a-us-pic" src="pics/airthermo-logo.svg" alt="AirThermo logo">
         </div>
         <svg class=" nectar-shape-divider
             bl" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
@@ -130,19 +140,19 @@
         </svg>
 
     </div>
-    <div class="serv f-col a-c">
-        <h2 class="h">Naše služby</h2>
+    <div class="serv f-col a-c t-cen">
+        <h3 class="hidden-element white">Naše služby</h3>
         <div class="flex wrap  j-c">
-            <div class="f-col s-item a-c ">
-                <img class="s-pic " src="pics/services-one.svg">
+            <div class="f-col s-item a-c hidden-element">
+                <img class="s-pic " src="pics/services-one.svg" alt="Klimatizace">
                 <p class="s-desc">Montáž klimatizací</p>
             </div>
-            <div class="f-col s-item a-c ">
-                <img class="s-pic" src="pics/services-two.svg">
+            <div class="f-col s-item a-c hidden-element">
+                <img class="s-pic" src="pics/services-two.svg" alt="Tepelné čerpadlo">
                 <p class="s-desc">Montáž tepelných čerpadel</p>
             </div>
-            <div class="f-col s-item a-c">
-                <img class="s-pic" src="pics/services-three.svg">
+            <div class="f-col s-item a-c hidden-element">
+                <img class="s-pic" src="pics/services-three.svg" alt="Chladící box">
                 <p class="s-desc">Výroba chladících boxů</p>
             </div>
         </div>
@@ -161,8 +171,8 @@
 
     </div>
     <div class="references f-col a-c">
-        <h3 class="blue">Reference</h3>
-        <div class="center">
+        <h4 class="blue hidden-element">Reference</h4>
+        <div class="center hidden-element">
             <div class="wrapper">
                 <div class="inner">
                     <div class="card">
@@ -238,7 +248,7 @@
 
             </div>
         </div>
-        <div class="center hidden">
+        <div class="center hidden hidden-element">
             <div class="wrapper hidden">
                 <div class="inner-hidden">
                     <div class="card">
@@ -319,7 +329,7 @@
                 <button class="nineth-2"></button>
             </div>
         </div>
-        <button class="more-ref">Více referencí</button>
+        <button class="more-ref hidden-element">Více referencí</button>
         <svg class=" nectar-shape-divider
             bl" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
             <path
@@ -334,10 +344,10 @@
         </svg>
     </div>
     <div class="reviews f-col a-c">
-        <h4 class="h">Recenze</h4>
+        <h5 class="hidden-element white">Recenze</h5>
         <div class="flex wrap a-c j-c">
-            <div class="f-col a-c j-c review-item">
-                <img class="review-pfp" src="pics/ref-pfp.svg">
+            <div class="f-col a-c j-c review-item hidden-element">
+                <img class="review-pfp" src="pics/ref-pfp.svg" alt="Review profile pic">
                 <p class="review-para">
                     r sit amet, consectetuer
                     adipiscing elit. Donec vitae arcu. Maecenas
@@ -351,10 +361,10 @@
                     - adipiscing elit
                 </p>
             </div>
-            <div class="f-col a-c j-c review-item">
+            <div class="f-col a-c j-c review-item hidden-element">
 
 
-                <img class="review-pfp" src="pics/ref-pfp.svg">
+                <img class="review-pfp" src="pics/ref-pfp.svg" alt="Review profile pic">
                 <p class="review-para">
                     r sit amet, consectetuer
                     adipiscing elit. Donec vitae arcu. Maecenas
@@ -368,8 +378,8 @@
                     - adipiscing elit
                 </p>
             </div>
-            <div class="f-col a-c review-item">
-                <img class="review-pfp" src="pics/ref-pfp.svg">
+            <div class="f-col a-c review-item hidden-element">
+                <img class="review-pfp" src="pics/ref-pfp.svg" alt="Review profile pic">
                 <p class="review-para">
                     r sit amet, consectetuer
                     adipiscing elit. Donec vitae arcu. Maecenas
@@ -383,10 +393,10 @@
                     - adipiscing elit
                 </p>
             </div>
-            <div class="f-col a-c review-item">
+            <div class="f-col a-c review-item hidden-element">
 
 
-                <img class="review-pfp" src="pics/ref-pfp.svg">
+                <img class="review-pfp" src="pics/ref-pfp.svg" alt="Review profile pic">
                 <p class="review-para">
                     r sit amet, consectetuer
                     adipiscing elit. Donec vitae arcu. Maecenas
@@ -415,10 +425,10 @@
         </svg>
     </div>
     <footer class="flex s-around">
-        <img class="footer-logo" src="pics/logo-footer.svg">
+        <img class="footer-logo hidden-element" src="pics/logo-footer.svg" alt="AirThermo logo">
 
         <div class="flex">
-            <div class="footer-links f-col">
+            <div class="footer-links f-col hidden-element">
                 <p class="footer-link-h">
                     Odkazy
                 </p>
@@ -437,7 +447,7 @@
 
 
             </div>
-            <div class="footer-links f-col">
+            <div class="footer-links f-col hidden-element">
                 <p class="footer-link-h">
                     Kontakt
                 </p>
@@ -454,6 +464,7 @@
 
     </script>
     <script src="scripts/carousel.js"></script>
+    <script src="scripts/animated-elem.js"></script>
 </body>
 
 </html>

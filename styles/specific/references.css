@@ -4,8 +4,10 @@
     padding-bottom: 80px;
 }
 
-h3 {
-   font-size: 50px;
+h4 {
+   font-size: 60px;
+   opacity: 0;
+   transform: translateY(50px);
 }
 
 .ref-item {
@@ -38,4 +40,5 @@ h3 {
     font-size: 34px;
     cursor: pointer;
     margin-top: 20px;
+    opacity: 0;
 }

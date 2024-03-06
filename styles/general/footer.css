@@ -1,14 +1,18 @@
 .footer-logo {
     width: 25vw;
     margin-left: 10vw;
+    opacity: 0;
 }
 
 footer {
     padding-bottom: 30px;
+    
 }
 
 .footer-links {
     margin-right: 10vw;
+    transform: translateX(40px);
+    opacity: 0;
 }
 
 

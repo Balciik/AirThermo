@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
+    <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" type="text/css" />
+    </noscript>
 
     <link rel="stylesheet" href="styles/general/general.css">
     <link rel="stylesheet" href="styles/general/header.css">
     <link rel="stylesheet" href="styles/general/path-elem.css">
     <link rel="stylesheet" href="styles/general/footer.css">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="styles/general/static-but.css">
     <link rel="stylesheet" href="styles/general/burger.css">
+
     <link rel="stylesheet" href="styles/specific/ser-main.css">
+
+
+
+
+
+
+    <title>Montáž tepelných čerpadel - AirThermo-Technic</title>
+    <meta name="description"
+        content="U montáže si dávame velký pozor, aby bylo všechno tam, kde má. Díky preciznosti zajistíme, že čerpadla budou dlouhoživotná a jen tak nic je nezničí!">
+    <meta name="keywords" content="Vzduchotechnika, klimatizace, tepelná čerpadla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="pics/airthermo-logo.svg">
+
 </head>
 
 <body>
     <a href="https://airthermo.cz/objednat/">
         <button class="sta-but b-blue white">Objednat ></button>
     </a>
-
     <header class="flex a-c s-around">
         <div class="l-head">
             <p class="h-head">
@@ -43,10 +57,12 @@
             <a class="h-link" href="https://airthermo.cz/reference/">
                 Reference
             </a>
-            <a class="h-link" href="https://airthermo.cz/kontakty/">
-                Kontakty
-            </a>
 
+            <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
+                <button class="header-button  b-white blue no-dec">
+                    Objednat >
+                </button>
+            </a>
         </div>
         <button class="burger" id="burger-menu" onclick="toggleMenu()"></button>
         <div class="background"></div>
@@ -57,7 +73,7 @@
 
                 <a style="animation-delay: 0.4s" href="https://airthermo.cz/reference/">Reference</a>
 
-                <a style="animation-delay: 0.5s" href="https://airthermo.cz/kontakty/">Kontakty</a>
+
                 <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
                     <button class="burger-button b-blue white no-dec">
                         Objednat >
@@ -71,11 +87,13 @@
         </script>
     </header>
 
+
+
     <div class="ser-main m-top-ser whi f-col a-c">
 
         <div class="services-item f-col a-c j-c">
-            <img class="ser-pic" src="pics/ser-two-blue.svg">
-            <h1 class="t-cen blue">Montáž tepelých čerpadel</h1>
+            <img class="ser-pic m-top" src="pics/ser-two-blue.svg" alt="Tepelné čerpadlo">
+            <h1 class="t-cen blue">Montáž tepelných čerpadel</h1>
             <div class="how-does f-col">
                 <div class="flex wrap service-col">
                     <div class="how-does-item">
@@ -149,7 +167,7 @@
         </div>
     </div>
     <footer class="flex b-blue s-around">
-        <img class="footer-logo" src="pics/logo-footer.svg">
+        <img class="footer-logo" src="pics/logo-footer.svg" alt="AirThermo logo">
 
         <div class="flex wrap j-c">
             <div class="footer-links f-col">

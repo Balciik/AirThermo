@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" type="text/css" />
+    </noscript>
+
+    <link rel="stylesheet" href="styles/general/general.css">
+    <link rel="stylesheet" href="styles/general/header.css">
+    <link rel="stylesheet" href="styles/general/path-elem.css">
+    <link rel="stylesheet" href="styles/general/footer.css">
+    <link rel="stylesheet" href="styles/general/burger.css">
+
+    <link rel="stylesheet" href="styles/specific/order.css">
+
+
+
+
+    <title>Objednat - AirThermo-Technic</title>
+    <meta name="description" content="Do naší práce vkládáme lásku, která je v tomto řemeslu potřeba. Vše upevníme tak, aby vydrželi naprosto vše.
+        Jakýkoliv projekt děláme na klíč, proto se můžete pouze těšit na nový a svěží vzduch, jen co příjdete domů.
+        Objednejte se monzáž od firmy, která je v oboru odborníkem!">
+    <meta name="keywords" content="Vzduchotechnika, klimatizace, tepelná čerpadla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="pics/airthermo-logo.svg">
+
+</head>
+
+<body>
+
+
+    <header class="flex a-c s-around">
+        <div class="l-head">
+            <p class="h-head">
+                AirThermo-Technic
+            </p>
+        </div>
+        <div class="r-header">
+            <a class="h-link" href="https://airthermo.cz/onás/">
+                O nás
+            </a>
+            <a class="h-link" href="https://airthermo.cz/služby/">
+                služby
+            </a>
+            <a class="h-link" href="https://airthermo.cz/reference/">
+                Reference
+            </a>
+
+            <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
+                <button class="header-button  b-white blue no-dec">
+                    Objednat >
+                </button>
+            </a>
+        </div>
+        <button class="burger" id="burger-menu" onclick="toggleMenu()"></button>
+        <div class="background"></div>
+        <div class="menu">
+            <nav>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/onás/">Služby</a>
+                <a style="animation-delay: 0.2s" href="https://airthermo.cz/služby/">Služby</a>
+
+                <a style="animation-delay: 0.4s" href="https://airthermo.cz/reference/">Reference</a>
+
+
+                <a style="animation-delay: 0.5s" href="https://airthermo.cz/objednat/" class="no-dec">
+                    <button class="burger-button b-blue white no-dec">
+                        Objednat >
+                    </button>
+                </a>
+
+            </nav>
+        </div>
+        <script type="text/javascript">
+            const toggleMenu = () => document.body.classList.toggle("open");
+        </script>
+    </header>
+    <div class="order-head b-blue white f-col a-c relative">
+        <h1>Objednat</h1>
+        <p class="order-subhead">Zpříjemněte se život a ušetřete!</p>
+        <p class="form-text t-cen white">
+            Do naší práce vkládáme lásku, která je v tomto řemeslu potřeba. Vše upevníme tak, aby vydrželi naprosto vše.
+            Jakýkoliv projekt děláme na klíč, proto se můžete pouze těšit na nový a svěží vzduch, jen co příjdete domů.
+            Objednejte se monzáž od firmy, která je v oboru odborníkem!
+        </p>
+        <svg class=" nectar-shape-divider
+        whi" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
+            <path
+                d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
+            </path>
+            <path
+                d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
+            </path>
+            <path
+                d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
+            </path>
+        </svg>
+    </div>
+
+
+
+    <form class="form-order f-col a-c relative">
+
+        <div class="flex wrap a-c j-c">
+            <div class="radio-div">
+                <label class="radio-service flex a-c j-c white b-blue f-col hidden-element">
+                    Klimatizace
+                    <input type="radio" name="radio" value="1-training" class="radio ">
+
+                </label>
+            </div>
+
+            <div class="radio-div">
+                <label class="radio-service flex a-c j-c white b-blue f-col hidden-element">
+                    Tepelné čeradlo
+                    <input type="radio" name="radio" value="1-training" class="radio ">
+
+                </label>
+            </div>
+            <div class="radio-div">
+                <label class="radio-service flex a-c j-c white b-blue f-col hidden-element">
+                    Chladící box
+                    <input type="radio" name="radio" value="1-training" class="radio ">
+
+                </label>
+            </div>
+        </div>
+        <div class="flex wrap j-c">
+
+            <input name="Jméno" class="inputs name-input b-white blue" type="text" placeholder="Jméno">
+            <input name="Příjmení" class="inputs surname-input b-white blue" type="text" placeholder="Příjmení">
+        </div>
+        <div class="flex wrap j-c">
+            <input name="Email" class="inputs name-input b-white blue" type="text" placeholder="Email">
+            <input name="Telefon" class="inputs tel-input b-white blue" type="text" placeholder="Tel. číslo">
+        </div>
+        <button type="submit" class="order m-top b-blue white">Objednat</button>
+        </div>
+        <svg class=" nectar-shape-divider
+    bl" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">
+            <path
+                d="M 1000 299 l 2 -279 c -155 -36 -310 135 -415 164 c -102.64 28.35 -149 -32 -232 -31 c -80 1 -142 53 -229 80 c -65.54 20.34 -101 15 -126 11.61 v 54.39 z">
+            </path>
+            <path
+                d="M 1000 286 l 2 -252 c -157 -43 -302 144 -405 178 c -101.11 33.38 -159 -47 -242 -46 c -80 1 -145.09 54.07 -229 87 c -65.21 25.59 -104.07 16.72 -126 10.61 v 22.39 z">
+            </path>
+            <path
+                d="M 1000 300 l 1 -230.29 c -217 -12.71 -300.47 129.15 -404 156.29 c -103 27 -174 -30 -257 -29 c -80 1 -130.09 37.07 -214 70 c -61.23 24 -108 15.61 -126 10.61 v 22.39 z">
+            </path>
+        </svg>
+    </form>
+    <footer class="flex b-blue s-around">
+        <img class="footer-logo" src="pics/logo-footer.svg" alt="AirThermo logo">
+
+        <div class="flex wrap j-c">
+            <div class="footer-links f-col">
+                <p class="footer-link-h">
+                    Odkazy
+                </p>
+                <a class="f-link">
+                    O nás
+                </a>
+                <a class="f-link">
+                    Služby
+                </a>
+                <a class="f-link">
+                    Reference
+                </a>
+                <a class="f-link">
+                    Kontakty
+                </a>
+
+
+            </div>
+            <div class="footer-links f-col">
+                <p class="footer-link-h">
+                    Kontakt
+                </p>
+                <a class="f-link">
+                    raesent dapibus. Proin pede metus, vulputate nec,
+                    fermentum fringilla, vehicula vitae, justo.
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

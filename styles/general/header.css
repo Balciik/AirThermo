@@ -47,8 +47,29 @@ header {
         display: none;
     }
 
+    .header-button {
+        display: none;
+    }
+
     .h-head {
         margin-left: 10px;
     
     }
 }
+
+.header-button {
+    width: 180px;
+    height: 60px;
+    border: none;
+    
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 26px;
+    font-weight:600;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .header-button:hover {
+    background-color: white;
+  }

@@ -7,9 +7,11 @@
 body {
     background-color: #FFF5EA;
     margin-top: -24px;
-    width: 101%;
-    margin-left: -0.5%;
+
 }
+
+
+
 
 .a-c {
     align-items: center;
@@ -40,6 +42,10 @@ body {
     text-align: center;
 }
 
+.relative {
+    position: relative;
+}
+
 .blue {
    color: #235789
 }
@@ -58,4 +64,10 @@ body {
 
 .black {
     color: #313638;
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0px);
+    transition: 0.3s ease;
 }

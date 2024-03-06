@@ -1,5 +1,5 @@
 .ref-header {
-    margin-top: 140px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -12,7 +12,7 @@ h1 {
     font-size: 20px;
     max-width: 50vw;
     font-weight: 500;
-    margin-top: 0px;
+    margin-top: -20px;
     padding-bottom: 70px;
 }
 
@@ -30,17 +30,7 @@ h4 {
     font-size: 64px;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 50px;
-    }
 
-    h2,
-    h3,
-    h4 {
-        font-size: 46px;
-    }
-}
 
 
 .ref-item {
@@ -56,7 +46,29 @@ h4 {
     .ref-pic {
         width: 50vw;
     }
+
+    .ref-header {
+        margin-top: 80px;
+    }
 }
 .m-top {
     margin-top: 0px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 56px;
+    }
+    .ref-header {
+        margin-top: 140px;
+    }
+
+    
+    
+
+    h2,
+    h3,
+    h4 {
+        font-size: 46px;
+    }
 }
